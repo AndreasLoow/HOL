@@ -43,6 +43,6 @@ val it =
 }
 
 \SEEALSO
-HolKernel.bvk_find_term, HolKernel.find_term, HolKernel.gen_find_term.
+HolKernelUtils.bvk_find_term, HolKernelUtils.find_term, HolKernelUtils.gen_find_term.
 
 \ENDDOC

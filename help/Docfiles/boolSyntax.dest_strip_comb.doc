@@ -30,6 +30,6 @@ idiomatically identified. In the absence of view-patterns in SML, one
 has to use custom destructors.
 
 \SEEALSO
-HolKernel.dest_term.
+HolKernelUtils.dest_term.
 
 \ENDDOC

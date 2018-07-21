@@ -55,6 +55,6 @@ shape.
 }
 
 \SEEALSO
-HolKernel.find_term, HolKernel.find_terms.
+HolKernelUtils.find_term, HolKernelUtils.find_terms.
 
 \ENDDOC

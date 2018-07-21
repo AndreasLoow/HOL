@@ -15,11 +15,12 @@ val new_compset = from_list;
 val listItems = clauses.deplist;
 val unmapped  = clauses.no_transform;
 
-
 type cbv_stack =
   ((thm->thm->thm) * (thm * db fterm),
    (thm->thm->thm) * bool * (thm * db fterm),
    (thm->thm)) stack;
+
+val ERR = mk_HOL_ERR "computeLib"
 
 fun stack_out(th, Ztop) = th
   | stack_out(th, Zrator{Rand=(mka,(thb,_)), Ctx}) = stack_out(mka th thb,Ctx)

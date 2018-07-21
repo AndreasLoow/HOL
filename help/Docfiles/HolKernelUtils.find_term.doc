@@ -27,6 +27,6 @@ Exception HOL_ERR {...}
 }
 
 \SEEALSO
-HolKernel.bvk_find_term, HolKernel.find_terms.
+HolKernelUtils.bvk_find_term, HolKernelUtils.find_terms.
 
 \ENDDOC

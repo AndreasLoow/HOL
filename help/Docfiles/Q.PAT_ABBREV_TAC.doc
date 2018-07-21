@@ -8,7 +8,7 @@ Introduces an abbreviation within the goal statement.
 \DESCRIBE
 When applied to the goal {(asl, w)}, the tactic {Q.PAT_ABBREV_TAC q}
 parses the quotation {q} in the context of the goal, producing an
-equality term {v = p}. The tactic then uses {HolKernel.gen_find_term}
+equality term {v = p}. The tactic then uses {HolKernelUtils.gen_find_term}
 to search for a sub-term of {w} that {p} matches against. If such a
 sub-term {t} is found then all occurrences of {t} (in {asl} and {w})
 will be replaced by {v} and an assumption {Abbrev(v = t)} is added to
@@ -65,6 +65,6 @@ failure because the pattern's variable {a} would have to bind the
 bound variable {x} in the goal.
 
 \SEEALSO
-Q.ABBREV_TAC, HolKernel.gen_find_term, Q.MATCH_ABBREV_TAC.
+Q.ABBREV_TAC, HolKernelUtils.gen_find_term, Q.MATCH_ABBREV_TAC.
 
 \ENDDOC

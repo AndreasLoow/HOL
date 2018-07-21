@@ -5,9 +5,6 @@
 \SYNOPSIS
 Introduces an assumption.
 
-\LIBRARY
-HolKernel
-
 \KEYWORDS
 rule, assumption.
 

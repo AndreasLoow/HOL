@@ -48,6 +48,6 @@ possible results. It would also be semantically different if {f} had
 side effects.
 
 \SEEALSO
-HolKernel.bvk_find_term, HolKernel.find_term, HolKernel.gen_find_terms.
+HolKernelUtils.bvk_find_term, HolKernelUtils.find_term, HolKernelUtils.gen_find_terms.
 
 \ENDDOC

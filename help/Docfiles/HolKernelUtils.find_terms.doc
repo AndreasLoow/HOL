@@ -31,6 +31,6 @@ Only fails if the predicate fails on one of the term's sub-terms.
 }
 
 \SEEALSO
-HolKernel.bvk_find_term, HolKernel.find_term.
+HolKernelUtils.bvk_find_term, HolKernelUtils.find_term.
 
 \ENDDOC

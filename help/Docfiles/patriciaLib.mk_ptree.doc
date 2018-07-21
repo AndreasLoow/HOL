@@ -20,7 +20,7 @@ The conversion will fail if the terms stored in the supplied Patricia tree do no
 Exception-
    HOL_ERR
   {message = "", origin_function = "mk_branch", origin_structure =
-  "HolKernel"} raised
+  "HolKernelUtils"} raised
 
 - mk_ptree (int_ptree_of_list [(1,``1``), (2, ``2``)]);
 val it = ``Branch 0 0 (Leaf 1 1) (Leaf 2 2)``: term

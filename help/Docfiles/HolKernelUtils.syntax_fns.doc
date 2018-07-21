@@ -17,7 +17,7 @@ Through a sequence of instantiations, the {syntax_fns} function can be used to q
 
 To provide syntax support for unary operations from the theory {num}, one can use the following function:
 {
-> val num1 = HolKernel.syntax_fns {n = 1, make = HolKernel.mk_monop, dest = HolKernel.dest_monop} "num";
+> val num1 = HolKernelUtils.syntax_fns {n = 1, make = HolKernelUtils.mk_monop, dest = HolKernelUtils.dest_monop} "num";
 val num1 = fn:
    string -> term * (term -> term) * (term -> term) * (term -> bool)
 }
@@ -54,7 +54,7 @@ Exception-
 
 The value {n} in the call to {syntax_fns} acts purely as a sanity check. For example, the following fails because {SUC} is not a binary operation:
 {
-> HolKernel.syntax_fns {n = 2, make = HolKernel.mk_binop, dest = HolKernel.dest_binop} "num" "SUC";
+> HolKernelUtils.syntax_fns {n = 2, make = HolKernelUtils.mk_binop, dest = HolKernelUtils.dest_binop} "num" "SUC";
 Exception-
    HOL_ERR
      {message = "bad number of arguments", origin_function = "systax_fns",
@@ -72,9 +72,9 @@ val it = (``l``, ``:32``): term * hol_type
 This is implemented as follows:
 {
 val (v2w_tm, mk_v2w, dest_v2w, is_v2w) =
-   HolKernel.syntax_fns
+   HolKernelUtils.syntax_fns
      {n = 1,
-      dest = fn tm1 => fn e => fn w => (HolKernel.dest_monop tm1 e w, wordsSyntax.dim_of w),
+      dest = fn tm1 => fn e => fn w => (HolKernelUtils.dest_monop tm1 e w, wordsSyntax.dim_of w),
       make = fn tm => fn (v, ty) => Term.mk_comb (Term.inst [Type.alpha |-> ty] tm, v)}
      "bitstring" "v2w"
 }
